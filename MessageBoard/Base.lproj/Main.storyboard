@@ -18,10 +18,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvp-pp-KCL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvp-pp-KCL">
                                 <rect key="frame" x="20" y="99" width="560" height="481"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="bBB-bx-B0t">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bBB-bx-B0t" id="vgH-gE-8cM">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-XN-70b">
+                                                    <rect key="frame" x="18" y="11" width="70" height="70"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="IVG-8a-XKq"/>
+                                                        <constraint firstAttribute="width" constant="70" id="cyo-u7-tx2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsP-fo-Cgr">
+                                                    <rect key="frame" x="115" y="11" width="424" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="dFS-QU-kXl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" red="0.26483619213104248" green="0.28484135866165161" blue="0.29364418983459473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aLC-EG-A1A">
+                                                    <rect key="frame" x="115" y="35" width="424" height="46"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="ird-3C-MWt"/>
+                                                    </constraints>
+                                                    <string key="text">Hey! This is a really long label. It is long so that I can see what a multiline label looks like. If it was longer, I don't know what I'd do!</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.26483619213104248" green="0.28484135866165161" blue="0.29364418983459473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="aLC-EG-A1A" firstAttribute="leading" secondItem="Wf3-XN-70b" secondAttribute="trailing" constant="27" id="D4l-j0-sSa"/>
+                                                <constraint firstItem="KsP-fo-Cgr" firstAttribute="top" secondItem="vgH-gE-8cM" secondAttribute="topMargin" constant="3" id="ZDE-Wh-1ie"/>
+                                                <constraint firstItem="aLC-EG-A1A" firstAttribute="top" secondItem="KsP-fo-Cgr" secondAttribute="bottom" constant="3" id="aY9-cz-OjT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aLC-EG-A1A" secondAttribute="trailing" constant="13" id="bqE-BN-YWO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Wf3-XN-70b" secondAttribute="bottom" constant="2.5" id="cQB-89-qZP"/>
+                                                <constraint firstItem="KsP-fo-Cgr" firstAttribute="leading" secondItem="Wf3-XN-70b" secondAttribute="trailing" constant="27" id="guQ-1L-hK8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KsP-fo-Cgr" secondAttribute="trailing" constant="13" id="nfc-Zc-rZg"/>
+                                                <constraint firstItem="Wf3-XN-70b" firstAttribute="leading" secondItem="vgH-gE-8cM" secondAttribute="leadingMargin" constant="10" id="sPX-ku-oXo"/>
+                                                <constraint firstItem="Wf3-XN-70b" firstAttribute="top" secondItem="vgH-gE-8cM" secondAttribute="topMargin" constant="3" id="zYg-Jv-vPN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybx-FS-b9h">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
@@ -103,6 +157,7 @@
     </scenes>
     <resources>
         <image name="bannerlogo" width="518" height="194"/>
+        <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
     </resources>
 </document>
