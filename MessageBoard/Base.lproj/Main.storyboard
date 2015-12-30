@@ -176,8 +176,57 @@
                     <view key="view" contentMode="scaleToFill" id="bZP-jY-Q6W">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9B-jL-XL5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Post" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf1-Ag-gpb">
+                                        <rect key="frame" x="250" y="48" width="101" height="21"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4U3-OW-HPK"/>
+                                            <constraint firstAttribute="width" constant="101" id="ZBU-Wi-oVt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFq-8y-YYp">
+                                        <rect key="frame" x="21" y="44" width="61" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.21403005720000001" green="0.59598547219999998" blue="0.81660109759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kf1-Ag-gpb" firstAttribute="centerX" secondItem="j9B-jL-XL5" secondAttribute="centerX" id="NbD-OI-4DL"/>
+                                    <constraint firstAttribute="height" constant="77" id="OJw-yD-oAb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kf1-Ag-gpb" secondAttribute="bottom" constant="8" id="nVY-ky-fOe"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-hY-uFN">
+                                <rect key="frame" x="180" y="145" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-iS-1IC">
+                                <rect key="frame" x="285" y="309" width="36" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j9B-jL-XL5" secondAttribute="trailing" id="QVd-F1-fPK"/>
+                            <constraint firstItem="j9B-jL-XL5" firstAttribute="top" secondItem="bZP-jY-Q6W" secondAttribute="top" id="UCC-px-gsO"/>
+                            <constraint firstItem="j9B-jL-XL5" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leading" id="s7j-B1-Q9y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyZ-pE-0ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
