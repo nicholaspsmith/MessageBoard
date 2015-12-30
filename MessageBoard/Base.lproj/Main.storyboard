@@ -117,6 +117,9 @@
                                                 <exclude reference="wl6-DP-KDx"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="6xe-vK-xbG" kind="show" identifier="AddPostVC" id="XkZ-Hb-NYg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -161,6 +164,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+        <!--Add PostVC-->
+        <scene sceneID="CZl-te-08Z">
+            <objects>
+                <viewController id="6xe-vK-xbG" customClass="AddPostVC" customModule="MessageBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LEy-EH-0Ab"/>
+                        <viewControllerLayoutGuide type="bottom" id="8nP-4V-wKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bZP-jY-Q6W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyZ-pE-0ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="429"/>
         </scene>
     </scenes>
     <resources>
