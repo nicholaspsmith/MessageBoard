@@ -316,6 +316,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descField" destination="u07-9F-sXO" id="Rgv-2E-xBb"/>
+                        <outlet property="postImg" destination="ID4-hY-uFN" id="lP6-oj-Bbi"/>
+                        <outlet property="titleField" destination="Z71-ic-ec6" id="AOz-e2-SdN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyZ-pE-0ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
