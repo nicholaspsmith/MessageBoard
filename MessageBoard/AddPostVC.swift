@@ -16,4 +16,10 @@ class AddPostVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func addPicBtnPressed(sender: AnyObject) {
+    }
+    @IBAction func makePostBtnPressed(sender: AnyObject) {
+    }
+    @IBAction func cancelBtnPressed(sender: AnyObject) {
+    }
 }
