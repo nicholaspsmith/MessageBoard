@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Kf1-Ag-gpb" secondAttribute="bottom" constant="8" id="nVY-ky-fOe"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-hY-uFN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-hY-uFN">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <animations/>
                                 <constraints>
@@ -222,6 +222,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="888-gT-LQb">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.49204808473587036" green="0.49213653802871704" blue="0.49204248189926147" alpha="0.57516708819999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="62I-DO-aYy"/>
                                     <constraint firstAttribute="height" constant="240" id="OsS-N3-Tpw"/>
