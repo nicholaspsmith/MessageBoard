@@ -216,13 +216,16 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="Lpg-V5-WCL"/>
-                                    <constraint firstAttribute="width" constant="240" id="Onl-XA-4E5"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="Onl-XA-4E5"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="888-gT-LQb">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.49204808473587036" green="0.49213653802871704" blue="0.49204248189926147" alpha="0.57516708815028905" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="62I-DO-aYy"/>
+                                    <constraint firstAttribute="height" constant="240" id="OsS-N3-Tpw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="+ Add Pic">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,6 +288,7 @@
                             <constraint firstItem="cyb-DF-gn7" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leadingMargin" constant="67" id="9GL-di-NSt"/>
                             <constraint firstItem="cyb-DF-gn7" firstAttribute="centerX" secondItem="bZP-jY-Q6W" secondAttribute="centerX" id="9hQ-eA-KpC"/>
                             <constraint firstItem="cyb-DF-gn7" firstAttribute="top" secondItem="u07-9F-sXO" secondAttribute="bottom" constant="20" id="H8Q-nf-cIL"/>
+                            <constraint firstItem="888-gT-LQb" firstAttribute="centerY" secondItem="ID4-hY-uFN" secondAttribute="centerY" id="I0T-d0-exT"/>
                             <constraint firstItem="888-gT-LQb" firstAttribute="width" secondItem="ID4-hY-uFN" secondAttribute="width" id="Iwc-uY-Lhm"/>
                             <constraint firstItem="u07-9F-sXO" firstAttribute="trailing" secondItem="bZP-jY-Q6W" secondAttribute="trailingMargin" id="MEv-u4-TuM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z71-ic-ec6" secondAttribute="trailing" constant="66" id="Pv1-W0-oo9"/>
@@ -296,6 +300,8 @@
                             <constraint firstItem="Z71-ic-ec6" firstAttribute="trailing" secondItem="bZP-jY-Q6W" secondAttribute="trailingMargin" id="a9t-HG-wbc"/>
                             <constraint firstItem="Z71-ic-ec6" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leadingMargin" constant="67" id="fiV-Xo-V8j"/>
                             <constraint firstItem="u07-9F-sXO" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leadingMargin" id="frP-N1-E9F"/>
+                            <constraint firstItem="888-gT-LQb" firstAttribute="centerX" secondItem="ID4-hY-uFN" secondAttribute="centerX" id="h1t-rV-h1P"/>
+                            <constraint firstItem="888-gT-LQb" firstAttribute="width" secondItem="ID4-hY-uFN" secondAttribute="width" id="m7C-ay-hSv"/>
                             <constraint firstItem="Z71-ic-ec6" firstAttribute="top" secondItem="888-gT-LQb" secondAttribute="bottom" constant="35" id="pOw-tt-ONO"/>
                             <constraint firstItem="j9B-jL-XL5" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leading" id="s7j-B1-Q9y"/>
                             <constraint firstItem="u07-9F-sXO" firstAttribute="leading" secondItem="bZP-jY-Q6W" secondAttribute="leadingMargin" constant="67" id="u6H-Sm-Pow"/>
@@ -305,6 +311,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="4SL-VP-AJR"/>
+                                <exclude reference="6L4-qx-ise"/>
+                                <exclude reference="Iwc-uY-Lhm"/>
+                                <exclude reference="m7C-ay-hSv"/>
+                                <exclude reference="wf5-R2-TUU"/>
                                 <exclude reference="Pv1-W0-oo9"/>
                                 <exclude reference="Ur7-RW-Q19"/>
                                 <exclude reference="a9t-HG-wbc"/>

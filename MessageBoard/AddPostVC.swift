@@ -16,8 +16,6 @@ class AddPostVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func addPicBtnPressed(sender: UIButton!) {
@@ -28,5 +26,6 @@ class AddPostVC: UIViewController {
     }
     
     @IBAction func cancelBtnPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
