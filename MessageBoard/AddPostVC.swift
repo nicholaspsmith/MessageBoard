@@ -13,11 +13,14 @@ class AddPostVC: UIViewController {
     @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descField: UITextField!
+    @IBOutlet weak var addPicBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         postImg.layer.cornerRadius = postImg.frame.size.width / 2
+        addPicBtn.layer.cornerRadius = addPicBtn.frame.size.width / 2
+        
     }
 
     @IBAction func addPicBtnPressed(sender: UIButton!) {
