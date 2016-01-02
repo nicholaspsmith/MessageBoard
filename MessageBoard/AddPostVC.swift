@@ -16,6 +16,8 @@ class AddPostVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        postImg.layer.cornerRadius = postImg.frame.size.width / 2
     }
 
     @IBAction func addPicBtnPressed(sender: UIButton!) {
