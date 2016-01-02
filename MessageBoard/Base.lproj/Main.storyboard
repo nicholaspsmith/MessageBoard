@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Kf1-Ag-gpb" secondAttribute="bottom" constant="8" id="nVY-ky-fOe"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-hY-uFN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-hY-uFN">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <animations/>
                                 <constraints>
