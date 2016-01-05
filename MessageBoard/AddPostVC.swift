@@ -8,12 +8,14 @@
 
 import UIKit
 
-class AddPostVC: UIViewController {
+class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descField: UITextField!
     @IBOutlet weak var addPicBtn: UIButton!
+    
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class AddPostVC: UIViewController {
         postImg.layer.cornerRadius = postImg.frame.size.width / 2
         addPicBtn.layer.cornerRadius = addPicBtn.frame.size.width / 2
         
+        imagePicker = UIImagePickerController()
     }
 
     @IBAction func addPicBtnPressed(sender: UIButton!) {
