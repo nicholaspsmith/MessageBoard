@@ -14,7 +14,6 @@ class DataService {
     static let instance = DataService()
     
     let KEY_POSTS = "posts"
-    
     private var _loadedPosts = [Post]()
     
     var loadedPosts: [Post] {
@@ -34,6 +33,9 @@ class DataService {
                 _loadedPosts = postsArray
             }
         }
+        
+        // Create a notification stating that posts are lloaded
+        NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: "postsLoaded", object: nil))
     }
     
     func saveImageAndCreatePath(image: UIImage) {
