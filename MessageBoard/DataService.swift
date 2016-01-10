@@ -51,4 +51,13 @@ class DataService {
         savePosts()
         loadPosts()
     }
+    
+    func documentsPathForFileName(name: String) -> String {
+        // Images are stored in documents directory, not nsuserdefaults
+        // Dont need to understand this gibberish
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentationDirectory, .UserDomainMask, true)
+        let fullPath = paths[0] as NSString
+        // have to cast as NSString because it needs the following method
+        return fullPath.stringByAppendingPathComponent(name)
+    }
 }
