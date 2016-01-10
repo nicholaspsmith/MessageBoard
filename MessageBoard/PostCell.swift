@@ -24,8 +24,6 @@ class PostCell: UITableViewCell {
     func configureCell(post: Post) {
         titleLbl.text = post.title
         descLbl.text = post.postDesc
-        
-        // For some reason this is not working: no image shows up
         postImage.image = DataService.instance.imageForPath(post.imagePath)
     }
 
