@@ -13,6 +13,8 @@ class DataService {
     // static - only 1 instance will exist
     static let instance = DataService()
     
+    let KEY_POSTS = "posts"
+    
     private var _loadedPosts = [Post]()
     
     var loadedPosts: [Post] {
@@ -20,11 +22,18 @@ class DataService {
     }
     
     func savePosts() {
-        
+        // Turn array into data so that it can be stored
+        let postsData = NSKeyedArchiver.archivedDataWithRootObject(_loadedPosts)
+        // Save data with key "posts"
+        NSUserDefaults.standardUserDefaults().setObject(postsData, forKey: KEY_POSTS)
     }
     
     func loadPosts() {
-        
+        if let postsData = NSUserDefaults.standardUserDefaults().objectForKey(KEY_POSTS) as? NSData {
+            if let postsArray = NSKeyedUnarchiver.unarchiveObjectWithData(postsData) as? [Post] {
+                _loadedPosts = postsArray
+            }
+        }
     }
     
     func saveImageAndCreatePath(image: UIImage) {
@@ -36,6 +45,8 @@ class DataService {
     }
     
     func addPost(post: Post) {
-        
+        _loadedPosts.append(post)
+        savePosts()
+        loadPosts()
     }
 }
