@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // : means there is a parameter
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
-        
-        let post = Post(imagePath: "", title: "Post1", description: "Post 1 Description")
-        let post2 = Post(imagePath: "", title: "Post2", description: "Post 2 Description")
-        let post3 = Post(imagePath: "", title: "Post3", description: "Post 3 Description")
-        
-        posts.append(post)
-        posts.append(post2)
-        posts.append(post3)
-        
-        tableView.reloadData()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
