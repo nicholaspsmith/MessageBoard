@@ -58,6 +58,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="aLC-EG-A1A" firstAttribute="leading" secondItem="Wf3-XN-70b" secondAttribute="trailing" constant="27" id="D4l-j0-sSa"/>
+                                                <constraint firstItem="Wf3-XN-70b" firstAttribute="centerY" secondItem="vgH-gE-8cM" secondAttribute="centerY" id="Gfa-GH-uOI"/>
                                                 <constraint firstItem="KsP-fo-Cgr" firstAttribute="top" secondItem="vgH-gE-8cM" secondAttribute="topMargin" constant="3" id="ZDE-Wh-1ie"/>
                                                 <constraint firstItem="aLC-EG-A1A" firstAttribute="top" secondItem="KsP-fo-Cgr" secondAttribute="bottom" constant="3" id="aY9-cz-OjT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="aLC-EG-A1A" secondAttribute="trailing" constant="13" id="bqE-BN-YWO"/>
@@ -67,6 +68,12 @@
                                                 <constraint firstItem="Wf3-XN-70b" firstAttribute="leading" secondItem="vgH-gE-8cM" secondAttribute="leadingMargin" constant="10" id="sPX-ku-oXo"/>
                                                 <constraint firstItem="Wf3-XN-70b" firstAttribute="top" secondItem="vgH-gE-8cM" secondAttribute="topMargin" constant="3" id="zYg-Jv-vPN"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="cQB-89-qZP"/>
+                                                    <exclude reference="zYg-Jv-vPN"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descLbl" destination="aLC-EG-A1A" id="xP0-41-8Of"/>

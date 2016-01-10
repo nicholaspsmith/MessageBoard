@@ -25,6 +25,8 @@ class DataService {
         let postsData = NSKeyedArchiver.archivedDataWithRootObject(_loadedPosts)
         // Save data with key "posts"
         NSUserDefaults.standardUserDefaults().setObject(postsData, forKey: KEY_POSTS)
+        // Save data to disk
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
     
     func loadPosts() {
