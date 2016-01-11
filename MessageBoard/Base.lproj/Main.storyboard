@@ -5,7 +5,85 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--Detail ViewVC-->
+        <scene sceneID="9Yo-Eh-kUV">
+            <objects>
+                <viewController id="nSH-U1-cTZ" customClass="DetailViewVC" customModule="MessageBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KT5-FJ-J3G"/>
+                        <viewControllerLayoutGuide type="bottom" id="8IA-wG-XPn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvu-Xo-m8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6f-pH-uvO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l05-NH-yTu">
+                                        <rect key="frame" x="21" y="45" width="61" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detailCancelButtonPressed:" destination="nSH-U1-cTZ" eventType="touchUpInside" id="Kvu-1B-bzJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NT-iF-eSp">
+                                        <rect key="frame" x="250" y="48" width="101" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7Je-z3-kRx"/>
+                                            <constraint firstAttribute="width" constant="101" id="pAM-nb-RQU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21403005720000001" green="0.59598547219999998" blue="0.81660109759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5NT-iF-eSp" firstAttribute="centerX" secondItem="a6f-pH-uvO" secondAttribute="centerX" id="RxH-nW-eeZ"/>
+                                    <constraint firstAttribute="height" constant="77" id="a3q-QA-YGM"/>
+                                    <constraint firstAttribute="bottom" secondItem="5NT-iF-eSp" secondAttribute="bottom" constant="8" id="fRv-XZ-Bg0"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-UW-dHh">
+                                <rect key="frame" x="115" y="124" width="370" height="228"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzX-ap-o7T">
+                                <rect key="frame" x="115" y="377" width="370" height="105"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="desc" destination="dzX-ap-o7T" id="rOd-aM-gYz"/>
+                        <outlet property="image" destination="eNc-UW-dHh" id="wtq-zi-9zt"/>
+                        <outlet property="postTitle" destination="5NT-iF-eSp" id="6v7-Jx-gGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfZ-IN-4ip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-244"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -79,6 +157,7 @@
                                             <outlet property="descLbl" destination="aLC-EG-A1A" id="xP0-41-8Of"/>
                                             <outlet property="postImage" destination="Wf3-XN-70b" id="NHr-a5-5Kz"/>
                                             <outlet property="titleLbl" destination="KsP-fo-Cgr" id="Ltl-tw-CYE"/>
+                                            <segue destination="nSH-U1-cTZ" kind="show" id="mwt-UK-DGd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

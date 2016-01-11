@@ -13,6 +13,7 @@
 		01409EB31C2B1B7500643F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01409EB21C2B1B7500643F32 /* Assets.xcassets */; };
 		01409EB61C2B1B7500643F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01409EB41C2B1B7500643F32 /* LaunchScreen.storyboard */; };
 		01409EBF1C2B1BC300643F32 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01409EBE1C2B1BC300643F32 /* Post.swift */; };
+		0159F8311C44738900CA3C48 /* DetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159F8301C44738800CA3C48 /* DetailViewVC.swift */; };
 		01BD57D71C3CD6E00001D033 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD57D61C3CD6E00001D033 /* DataService.swift */; };
 		AB0B50C21C33703700DEB81F /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B50C11C33703600DEB81F /* AddPostVC.swift */; };
 		AB8F58C31C321E8F0078F6F7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F58C21C321E8F0078F6F7 /* PostCell.swift */; };
@@ -27,6 +28,7 @@
 		01409EB51C2B1B7500643F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01409EB71C2B1B7500643F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01409EBE1C2B1BC300643F32 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0159F8301C44738800CA3C48 /* DetailViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewVC.swift; sourceTree = "<group>"; };
 		01BD57D61C3CD6E00001D033 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AB0B50C11C33703600DEB81F /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 		AB8F58C21C321E8F0078F6F7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				01409EAD1C2B1B7500643F32 /* ViewController.swift */,
 				AB0B50C11C33703600DEB81F /* AddPostVC.swift */,
+				0159F8301C44738800CA3C48 /* DetailViewVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0159F8311C44738900CA3C48 /* DetailViewVC.swift in Sources */,
 				01409EBF1C2B1BC300643F32 /* Post.swift in Sources */,
 				01409EAE1C2B1B7500643F32 /* ViewController.swift in Sources */,
 				AB0B50C21C33703700DEB81F /* AddPostVC.swift in Sources */,
