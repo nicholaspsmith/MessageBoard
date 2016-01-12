@@ -38,6 +38,7 @@ class DetailViewVC: UIViewController {
             let cell = DataService.instance.loadedPosts[i]
             postTitle.text = cell.title
             desc.text = cell.postDesc
+            image.image = UIImage(named: cell.imagePath)
         }
     }
     
