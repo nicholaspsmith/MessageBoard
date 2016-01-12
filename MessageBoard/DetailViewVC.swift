@@ -8,21 +8,39 @@
 
 import UIKit
 
-class DetailViewVC: UIViewController, UINavigationControllerDelegate {
+class DetailViewVC: UIViewController {
+    
+    var passedData: [String]!
+    var indexInPosts: Int!
 
     @IBOutlet weak var postTitle: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var desc: UILabel!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        self.indexInPosts = Manager.dataToPass
+        
+        if let i = indexInPosts {
+            let cell = DataService.instance.loadedPosts[i]
+            postTitle.text = cell.title
+            desc.text = cell.postDesc
+        }
     }
     
-
+    override func viewWillAppear(animated: Bool) {
+        self.indexInPosts = Manager.dataToPass
+        
+        if let i = indexInPosts {
+            let cell = DataService.instance.loadedPosts[i]
+            postTitle.text = cell.title
+            desc.text = cell.postDesc
+        }
+    }
+    
     @IBAction func detailCancelButtonPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 }

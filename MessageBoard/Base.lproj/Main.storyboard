@@ -22,7 +22,7 @@
         <!--Detail ViewVC-->
         <scene sceneID="9Yo-Eh-kUV">
             <objects>
-                <viewController id="nSH-U1-cTZ" customClass="DetailViewVC" customModule="MessageBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="detailVCIdentifier" storyboardIdentifier="detailVCIdentifier" id="nSH-U1-cTZ" customClass="DetailViewVC" customModule="MessageBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KT5-FJ-J3G"/>
                         <viewControllerLayoutGuide type="bottom" id="8IA-wG-XPn"/>
@@ -115,11 +115,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvp-pp-KCL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvp-pp-KCL">
                                 <rect key="frame" x="20" y="99" width="560" height="481"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="92" id="bBB-bx-B0t" customClass="PostCell" customModule="MessageBoard" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="92" id="bBB-bx-B0t" customClass="PostCell" customModule="MessageBoard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bBB-bx-B0t" id="vgH-gE-8cM">
@@ -176,7 +176,7 @@
                                             <outlet property="descLbl" destination="aLC-EG-A1A" id="xP0-41-8Of"/>
                                             <outlet property="postImage" destination="Wf3-XN-70b" id="NHr-a5-5Kz"/>
                                             <outlet property="titleLbl" destination="KsP-fo-Cgr" id="Ltl-tw-CYE"/>
-                                            <segue destination="nSH-U1-cTZ" kind="show" id="mwt-UK-DGd"/>
+                                            <segue destination="nSH-U1-cTZ" kind="showDetail" identifier="ShowDetailView" action="showViewController:sender:" id="ext-OW-2aN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

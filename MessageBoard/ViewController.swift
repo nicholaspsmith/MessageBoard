@@ -23,6 +23,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -48,6 +52,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.loadedPosts.count
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        Manager.dataToPass = indexPath.row
+        
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier("detailVCIdentifier") as! DetailViewVC
+        
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
+    
     
     func onPostsLoaded(notif: AnyObject) {
         tableView.reloadData()
