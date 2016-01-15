@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        Manager.dataToPass = indexPath.row
+        DataService.instance.postNumber = indexPath.row
         
         let viewController = storyboard?.instantiateViewControllerWithIdentifier("detailVCIdentifier") as! DetailViewVC
         

@@ -21,7 +21,7 @@ class DetailViewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.indexInPosts = Manager.dataToPass
+        self.indexInPosts = DataService.instance.postNumber
         
         if let i = indexInPosts {
             let cell = DataService.instance.loadedPosts[i]
@@ -32,7 +32,7 @@ class DetailViewVC: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.indexInPosts = Manager.dataToPass
+        self.indexInPosts = DataService.instance.postNumber
         
         if let i = indexInPosts {
             let cell = DataService.instance.loadedPosts[i]

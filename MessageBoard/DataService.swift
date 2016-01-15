@@ -20,6 +20,17 @@ class DataService {
         return _loadedPosts
     }
     
+    private var _postNumber: Int = 0
+    
+    var postNumber: Int {
+        get {
+            return _postNumber
+        }
+        set {
+            _postNumber = newValue
+        }
+    }
+    
     func savePosts() {
         // Turn array into data so that it can be stored
         let postsData = NSKeyedArchiver.archivedDataWithRootObject(_loadedPosts)
