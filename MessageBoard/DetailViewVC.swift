@@ -21,17 +21,14 @@ class DetailViewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.indexInPosts = DataService.instance.postNumber
-        
-        if let i = indexInPosts {
-            let cell = DataService.instance.loadedPosts[i]
-            postTitle.text = cell.title
-            desc.text = cell.postDesc
-            image.image = UIImage(named: cell.imagePath)
-        }
+        loadPost()
     }
     
     override func viewWillAppear(animated: Bool) {
+        loadPost()
+    }
+    
+    func loadPost() {
         self.indexInPosts = DataService.instance.postNumber
         
         if let i = indexInPosts {
